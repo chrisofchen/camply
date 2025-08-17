@@ -1035,4 +1035,5 @@ class BaseCampingSearch(ABC):
             logger.info("🏕  %s - (#%s)", facility.facility_name, facility.facility_id)
             for item in campsites:
                 if item.facility_id == facility.facility_id:
-                    logger.info("    ⛺️ %s - (#%s)", item.name, item.id)
+                    # logger.info("    ⛺️ %s - (#%s)", item.name, item.id)
+                    logger.info("    ⛺️ %s - (#%d)", item.name, item.id)
